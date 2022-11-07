@@ -1,3 +1,6 @@
 [submodule "themes/themes/hugo-profile"]
 	path = themes/themes/hugo-profile
 	url = https://github.com/gurusabarish/hugo-profile
+[submodule "hex-wasm"]
+	path = hex-wasm
+	url = https://github.com/Chroq/hex-wasm
