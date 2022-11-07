@@ -1,0 +1,335 @@
+baseURL: "https://www.christophe-lecroq.dev"
+languageCode: "fr-FR"
+title: "Christophe Lecroq - Développeur Go & PHP"
+theme: hugo-profile
+
+Paginate: 3
+#disqusShortname: gurusabarish
+#googleAnalytics: G-DWJJVE27WD
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+  # main:
+    # - identifier: blog
+    #  name: Blog
+    #  title: Blog posts
+    #  url: /blogs
+    #  weight: 1
+
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Christophe Lecroq - Développeur Golang & PHP"
+  description: Christophe Lecroq - Développeur Backend freelance Golang & PHP
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/images/white-cloud-002.webp"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: dark # "light"
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:baseURL = 'https://www.christophe-lecroq.info'
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Bonjour, vous avez besoin d'un"
+    title: "Développeur freelance Go/PHP ?"
+    subtitle: "Ravi de faire votre connaissance !"
+    content: "Je suis un développeur passionné Go & PHP. Construisons ensemble des applications web solides, rapides et évolutives."
+    image: /images/christophe-lecroq-002.webp
+    button:
+      enable: true
+      name: "Télécharger mon CV"
+      url: "/documents/CV_2022-11-04_Christophe_Lecroq.pdf"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Chroq
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/christophe-lecroq-freelance
+        - icon: fab fa-golang
+          url: https://go.dev/
+        - icon: fab fa-php
+          url: https://www.php.net/
+
+  # About
+  about:
+    enable: true
+    title: "À propos"
+    image: "/images/white-cloud-002.webp"
+    content: |-
+      Salarié pendant 10 ans, j'ai décidé de me lancer en temps que développeur indépendant en novembre 2022.
+      Fort d'une solide expérience en backend (PHP & Go principalement) et dans des domaines tels que les bases de données, les architectures logicielles ou encore l'infrastructure, je vous accompagne dans tous vos projets de développement.
+      N'hésitez pas à me contacter pour discuter de vos besoins et missions éventuels.
+    skills:
+      enable: true
+      title: "Parmi les outils que j'utilise quotidiennement, je compte :"
+      items:
+        - "Golang"
+        - "PHP"
+        - "Docker"
+        - "PostgreSQL"
+        - "Git"
+        - "Linux"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Expériences"
+    items:
+      - job: "Développeur Go & PHP (API Platform)"
+        company: "Limengo"
+        companyUrl: "https://www.limengo.com/"
+        date: "août 2021 - octobre 2022 - 1 an 3 mois"
+        content: |
+          - Mise en place de deux typologies de micro services :
+            - CRUD : OpenAPI (génération IO, validation), gORM, Gin ou API Platform
+            - Service : Gin, code métier organisé en DDD
+          - Développement du Business Layer
+            - Appels concurrentiels sur les micro-services
+            - Organisation des Bounded Contexts
+          - Développement de l'interface entre le front et les micro services
+            - Validation des requêtes entrantes
+            - "Firewall" (exclusion des requêtes non autorisées dans le contrat public)
+            - Cache (BigCache)
+
+      - job: "Développeur PHP (Sylius/Symfony)"
+        company: "PharmaGDD"
+        companyUrl: "https://www.pharma-gdd.com/"
+        date: "janvier 2021 - juillet 2021 - 7 mois"
+        content: |
+          - Développement du nouveau site https://www.pharma-gdd.com sur le framework Sylius 
+
+      - job: "Développeur PHP (Laravel)"
+        company: "Dans ma culotte"
+        companyUrl: "https://www.dansmaculotte.com/"
+        date: "août 2020 - décembre 2020 - 6 mois"
+        content: |
+          - Développement du nouveau site https://www.dansmaculotte.com sur le framework Laravel
+          - Développement d'un outil de logistique interne sur le framework Laravel 
+
+      - job: "Développeur Fullstack (Javascript)"
+        company: "marmelab"
+        companyUrl: "https://www.marmelab.com/"
+        date: "décembre 2019 - février 2020 - 2 mois"
+        content: |
+          - Développement d'un jeu de hex à l'aide de : Python, Symfony, Golang, Javascript, React & React Native
+
+      - job: "Développeur PHP (Laravel)"
+        company: "SoyHuCe"
+        companyUrl: "https://www.soyhuce.com/"
+        date: "décembre 2017 - décembre 2019 - 2 ans"
+        content: |
+          - Développement d'un annuaire spécialisé dans les établissements d'esthétique
+          - Développement d'une plateforme d'aggrégations et de catégorisation (métadata) de sources de données pour le Big Data
+          - Développement d'un site institutionnel 
+
+      - job: "Développeur PHP (Symfony)"
+        company: "ABSIX INFORMATIQUE"
+        companyUrl: "https://absix.fr/"
+        date: "mars 2017 - décembre 2017 - 10 mois"
+        content: |
+          - Développement d'API SOAP/REST pour interfacer les systèmes existants avec le nouvel ERP
+          - Projets mineurs web (monitoring, site internet, etc)
+
+      - job: "Développeur PHP freelance"
+        company: "Autoentreprise"
+        companyUrl: ""
+        date: "juin 2016 - mars 2017 - 10 mois"
+        content: |
+          - Prolongation du travail effectué chez Captain Flit
+          - Prototypage d'un site d'e-commerce sur Sylius
+          - Développement d'une appli mobile pour le compte d'un particulier sur ionic
+          - Formations aux bases de l'algorithmie et du développement auprès de structure comme l'EM Normandie ou le pôle emploi 
+
+      - job: "Développeur PHP (Drupal)"
+        company: "Captain Flit"
+        companyUrl: ""
+        date: "mars 2016 - juin 2016 - 4 mois"
+        content: |
+          - Maintenance et évolution d'un site de réservation de bateaux en ligne
+
+      - job: "Développeur PHP (Drupal)"
+        company: "DigitHealth"
+        companyUrl: ""
+        date: "mai 2015 - novembre 2015 - 7 mois"
+        content: |
+          - Développement de l'API REST sur le framework Symfony 2 du web service utilisé pour nos sites/applications mobiles.
+
+      - job: "Développeur PHP (Magento)"
+        company: "Green and Biz"
+        companyUrl: ""
+        date: "septembre 2014 - mai 2015 - 9 mois"
+        content: |
+          - Développement des sites e-commerce et interne à l'entreprise à l'aide d'outils tel que Magento, Prestashop ou Symfony 2.
+          
+      - job: "Intégrateur & Développeur PHP"
+        company: "MGS Informatique"
+        companyUrl: "https://www.mgsinfo.com/"
+        date: "janvier 2014 - septembre 2014 - 9 mois"
+        content: |
+          - Développement et intégration de sites institutionnels.
+
+  # Education
+  education:
+    enable: true
+    title: "Formation"
+    # index: true
+    items:
+      - title: "Licence STIC - CNAM"
+        school:
+          name: "AIFCC"
+        date: "2010 - 2011"
+        content: |-
+          Licence générale d'informatique en alternance chez Alcoa à Dives-sur-mer
+      - title: "BTS Informatique de gestion"
+        school:
+          name: "Lycée Jean Rostand"
+        date: "2008 - 2010"
+        content: |-
+          Option développeur d'application - 1 stage réseau, 1 stage développement
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        # badges:
+        #   - "Django"
+        #   - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contact"
+    content: Envie de discuter de votre prochain projet ? Vous souhaitez plus d'informations ? N'hésitez pas à m'envoyer un message
+    email: contact.freelance.cl@gmail.com
+    btnName: Email
+
+  footer:
+    recentPosts: false
