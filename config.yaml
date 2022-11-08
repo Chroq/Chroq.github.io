@@ -337,7 +337,7 @@ params:
 deployment:
   targets:
     - name: production
-    - URL: "gs://christophe-lecroq-dev"
+      URL: gs://christophe-lecroq.dev
   matchers:
     - pattern: ^.+\.(js|css|svg|ttf)$
       cacheControl: 'max-age=31536000, no-transform, public'
