@@ -1,7 +1,7 @@
 baseURL: "https://www.christophe-lecroq.dev"
 languageCode: "fr-FR"
 title: "Christophe Lecroq - Développeur Go & PHP"
-theme: hugo-profile
+#theme: hugo-profile
 
 Paginate: 3
 #disqusShortname: gurusabarish
@@ -47,7 +47,7 @@ params:
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
   # Note the lack of "" in true, it should be of boolean type.
-  useBootstrapCDN: false
+  useBootstrapCDN: true
 
   # Whether the fade animations on the home page will be enabled
   animate: true
@@ -96,7 +96,7 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Bonjour, vous avez besoin d'un"
+    intro: "Bonjour, vous recherchez un"
     title: "Développeur freelance Go/PHP ?"
     subtitle: "Ravi de faire votre connaissance !"
     content: "Je suis un développeur passionné Go & PHP. Construisons ensemble des applications web solides, rapides et évolutives."

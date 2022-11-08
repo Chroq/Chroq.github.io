@@ -178,10 +178,6 @@ header .navbar.animate {
     padding: 0.5rem;
 }
 
-#hero a.btn.social-icon-2 svg {
-    height: 3rem;
-}
-
 #hero a.btn.social-icon:hover {
     background-color: var(--background-color) !important;
     opacity: 0.7;
