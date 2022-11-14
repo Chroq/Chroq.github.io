@@ -39,7 +39,7 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Christophe Lecroq - Développeur Golang & PHP"
+  title: "Christophe Lecroq"
   description: Christophe Lecroq - Développeur Backend freelance Golang & PHP
   # staticPath: ""  # The path to serve the static files from
   favicon: "/images/white-cloud-002.webp"
@@ -80,15 +80,15 @@ params:
   #     secondaryColor:baseURL = 'https://www.christophe-lecroq.info'
 
   # If you want to customize the menu, you can change it here
-  # navbar:
-  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
   #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
   #   brandName: "Profile" # Brand name for the brand | default is the title variable
 
-  #   menus:
+  menus:
+    disableExperience: true
+    disableEducation: true
   #     disableAbout: true
-  #     disableExperience: true
-  #     disableEducation: true
   #     disableProjects: true
   #     disableAchievements: true
   #     disableContact: true
