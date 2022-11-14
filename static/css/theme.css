@@ -6,7 +6,12 @@
 
 /* dark mode */
 .dark {
-    --background-color: var(--background-color-dark) !important;
+    background-image: url("/images/background.webp");
+    background-repeat: repeat;
+    background-size: 100%;
+    background-color: black;
+    background-attachment: fixed;
+
     --secondary-background-color: var(--secondary-background-color-dark) !important;
     --text-color: var(--text-color-dark) !important;
     --text-secondary-color: var(--text-secondary-color-dark) !important;
