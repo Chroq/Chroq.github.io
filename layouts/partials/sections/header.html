@@ -48,6 +48,36 @@
             <!-- navbar content -->
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav {{ .Site.Params.navbar.align | default "ms-auto"}} text-center">
+                    <!-- custom menus from the user -->
+                    {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
+                    <!-- Dropdown menu -->
+                    <li class="nav-item navbar-text dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ .URL }}" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{ .Title }}">
+                            {{ .Name }}
+                        </a>
+                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
+                            {{ range .Children }}
+                            <a class="dropdown-item text-center nav-link" href="{{ .URL }}"
+                                title="{{ .Title }}">
+                                {{ .Name }}
+                            </a>
+                            {{ end }}
+                        </div>
+                    </li>
+                    {{else}}
+                    <!-- Single menu item -->
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{.URL}}" title="{{ .Title }}">
+                            {{ .Pre }}
+                            {{ .Name }}
+                        </a>
+                    </li>
+                    {{end}}
+                    {{end}}
+                 
+                 
                     {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#about" aria-label="about">À propos</a>
@@ -88,35 +118,6 @@
                             aria-label="contact">Contact</a>
                     </li>
                     {{ end }}
-
-                    <!-- custom menus from the user -->
-                    {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
-                    <!-- Dropdown menu -->
-                    <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{ .URL }}" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{ .Title }}">
-                            {{ .Name }}
-                        </a>
-                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
-                            {{ range .Children }}
-                            <a class="dropdown-item text-center nav-link" href="{{ .URL }}"
-                                title="{{ .Title }}">
-                                {{ .Name }}
-                            </a>
-                            {{ end }}
-                        </div>
-                    </li>
-                    {{else}}
-                    <!-- Single menu item -->
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{.URL}}" title="{{ .Title }}">
-                            {{ .Pre }}
-                            {{ .Name }}
-                        </a>
-                    </li>
-                    {{end}}
-                    {{end}}
                 </ul>
 
                 <!-- darkmode mode toggle -->

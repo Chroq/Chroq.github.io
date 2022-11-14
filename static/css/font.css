@@ -18,3 +18,7 @@ body {
 .default-font, #default-font {
     font-family: "Roboto", sans-serif;
 }
+
+h3.text-center{
+    font-size: 2.5rem;
+}

@@ -12,13 +12,13 @@ markup:
     renderer:
       unsafe: true
 
-# Menus:
-  # main:
-    # - identifier: blog
-    #  name: Blog
-    #  title: Blog posts
-    #  url: /blogs
-    #  weight: 1
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
 
     #Dropdown menu
     # - identifier: dropdown
@@ -104,7 +104,7 @@ params:
     button:
       enable: true
       name: "Télécharger mon CV"
-      url: "/documents/CV_2022-11-04_Christophe_Lecroq.pdf"
+      url: "/documents/CV_Christophe_Lecroq.pdf"
       download: true
     socialLinks:
       fontAwesomeIcons:
@@ -332,7 +332,7 @@ params:
     btnName: Email
 
   footer:
-    recentPosts: false
+    recentPosts: true
 
 deployment:
   targets:
