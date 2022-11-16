@@ -334,20 +334,3 @@ params:
   footer:
     recentPosts: true
 
-deployment:
-  targets:
-    - name: production
-      URL: gs://christophe-lecroq.dev
-  matchers:
-    - pattern: ^.+\.(js|css|svg|ttf)$
-      cacheControl: 'max-age=31536000, no-transform, public'
-      gzip: true
-    - pattern: ^.+\.(png|jpg)$
-      cacheControl: 'max-age=31536000, no-transform, public'
-      gzip: false
-    - pattern: ^sitemap\.xml$
-      contentType: application/xml
-      gzip: true
-    - pattern: ^.+\.(html|xml|json)$
-      gzip: true
-
