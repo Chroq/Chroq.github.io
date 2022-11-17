@@ -1,4 +1,4 @@
-baseURL: "https://github.com/Chroq/Chroq.github.io"
+baseURL: "https://github.com"
 languageCode: "fr-FR"
 title: "Christophe Lecroq - Développeur Go & PHP"
 #theme: hugo-profile
