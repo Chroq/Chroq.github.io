@@ -22,6 +22,11 @@
                         <p>{{ .Summary | truncate 300}}</p>
                     </div>
                 </div>
+                {{ if .Params.image }}
+                <div class="featured-image">
+                  <img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">
+                </div>
+                {{ end }}
                 <div class="mt-auto post-footer bg-transparent py-3">
                     <span class="float-start bg-transparent">{{ .Date.Format "2 Jan 2006" }}</span>
                     <a href="{{ .RelPermalink }}" class="float-end btn btn-outline-info btn-sm">Lire</a>
