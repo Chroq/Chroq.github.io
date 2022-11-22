@@ -212,4 +212,4 @@ Le déroulement est donc ici le suivant :
 
 ### Conclusion
 
-J'espère que vous avez désormais une meilleure vision de ce que sont les `goroutines`, `channels` et de la concurrence en Go. Il s'agit d'une première approche pour appréhender les concepts de base de la concurrence et le prochain article traitera plus en profondeur des channels et du package sync.
+J'espère que vous avez désormais une meilleure vision de ce que sont les `goroutines`, `channels` et de la concurrence en Go. Il s'agit d'une première approche pour appréhender les concepts de base de la concurrence et le prochain article traitera plus en profondeur des channels.
