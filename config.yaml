@@ -123,7 +123,7 @@ params:
     title: "À propos"
     image: "/images/white-cloud-002.webp"
     content: |-
-      Salarié pendant 10 ans, j'ai décidé de me lancer en temps que développeur indépendant en novembre 2022.
+      Salarié pendant 10 ans, j'ai décidé de me lancer en tant que développeur indépendant en novembre 2022.
       Fort d'une solide expérience en backend (PHP & Go principalement) et dans des domaines tels que les bases de données, les architectures logicielles ou encore l'infrastructure, je vous accompagne dans tous vos projets de développement.
       N'hésitez pas à me contacter pour discuter de vos besoins et missions éventuels.
     skills:
